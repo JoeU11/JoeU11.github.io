@@ -11,7 +11,8 @@
   </noscript>
 </head>
 
-<body class="homepage is-preload">
+<body class="homepage is-preload" onload="randomQuestion()">
+
   <div id="page-wrapper">
 
     <!-- Header -->
@@ -24,8 +25,9 @@
           <hr />
           <p>Software Developer</p>
         </header>
+        <br /><br />
         <footer>
-          <a href="#banner">about me</a>
+          <a id="question" href="#banner"></a>
         </footer>
       </div>
 
@@ -33,7 +35,7 @@
       <nav id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#banner">About me</a></li>
+          <li><a href="#aboutMe">About me</a></li>
           <li><a href="#capstone">Capstone</a></li>
           <li><a href="#projects">Other Projects</a></li>
           <li><a href="#footer">Contact</a></li>
@@ -41,10 +43,12 @@
       </nav>
 
     </div>
-
     <section id="banner">
       <header>
-        <h2><strong>About me</strong></h2>
+        <hr />
+        <p id="eyeroll"></p>
+        <hr />
+        <h2 id="aboutMe"><strong>About me</strong></h2>
         <p style="margin: auto; width: 50%; padding: 15px;">
           Hi! I'm Joe and I write code. I got my start in coding through the Actualize bootcamp (such an amazing
           experience) and have been learning ever since. Prior to coding, I worked in the legal/business field as a
@@ -202,6 +206,13 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">function randomQuestion() {
+      var questions = ["Why do developers love dark mode?", "What is the most used language in programming?", "Why did the database administer leave his wife?"]
+      var answers = ["Because light attracts bugs!", "Profanity!", "She had one-to-many relationships!"]
+      var num = Math.floor(Math.random() * 3)
+      document.getElementById('question').innerHTML = questions[num];
+      document.getElementById('eyeroll').innerHTML = answers[num];
+    }</script>
 
 </body>
 
