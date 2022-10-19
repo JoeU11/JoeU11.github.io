@@ -1,1 +1,314 @@
-<h1>Hello World</h1>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Joe Ulica</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body class="homepage is-preload" onload="randomQuestion()">
+
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header">
+
+      <!-- Inner -->
+      <div class="inner">
+        <header>
+          <h1><a href="index.html" id="logo">Joe Ulica</a></h1>
+          <hr />
+          <p>Software Developer</p>
+        </header>
+        <br /><br />
+        <footer>
+          <a id="question" href="#banner" onClick="showJoke()"></a>
+        </footer>
+      </div>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#aboutMe">About me</a></li>
+          <li><a href="#capstone">Capstone</a></li>
+          <li><a href="#projects">Other Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    <section id="banner">
+      <header>
+        <hr />
+        <p id="eyeroll"></p>
+        <hr />
+        <h2 id="aboutMe"><strong>About me</strong></h2>
+        <p style="margin: auto; width: 50%; padding: 15px;">
+          Hi! I'm Joe and I write code. I got my start in programming through the Actualize bootcamp (an amazing
+          experience) and have been learning ever since. Prior to coding, I worked in the legal/business field as a
+          paralegal for Kirkland & Ellis in NYC and then as a licensing specialist for Esri, Inc. My first exposure to
+          sofware development came through working with the developers at Esri, and it wasn't long before I realized I
+          wanted to do this for a living. I'm still fairly early in my tech journey, but I can't wait to see where this
+          road takes me.
+          <br /><br />
+          When I'm not at my desk, you can find me playing/watching soccer (hala Madrid!) or hanging out with my
+          dogs. Also known to get wrapped up in a good video game or book.
+        </p>
+      </header>
+    </section>
+
+    <div class="wrapper style2">
+
+      <article id="main" class="container special">
+        <a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+      </article>
+
+    </div>
+
+    <!-- Banner -->
+    <div id="capstone"></div>
+    <section id="banner">
+      <header>
+        <h2><strong>WePlay Pickup Sports</strong> - Capstone Project</h2>
+        <p>
+          An app allowing users to see, schedule and sign up for pickup sports events.
+        </p>
+      </header>
+    </section>
+
+    <!-- Main -->
+    <div class="wrapper style2">
+
+      <article id="main" class="container special">
+        <a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+        <!-- video goes here -->
+        <header>
+          <h2>Highlights:</h2>
+
+
+          <div class="listBox">
+            <ul>
+              <li><a href="https://github.com/JoeU11/WePlay-Pickup-Sports-API">Ruby on Rails backend</a> || <a
+                  href="https://github.com/JoeU11/WePlay-Pickup-Sports-Frontend">Vue.js frontend</a></li>
+              <li>Integrates with Google Calendar API using OAuth to add events to user's calendar </li>
+              <li>Calculates expected participants based on geographic distance and user-selected preferred times of
+                playing</li>
+              <li>All times display locally</li>
+            </ul>
+          </div>
+
+          <!-- <p>
+            Sociis aenean eu aenean mollis mollis facilisis primis ornare penatibus aenean. Cursus ac enim
+            pulvinar curabitur morbi convallis. Lectus malesuada sed fermentum dolore amet.
+          </p> -->
+        </header>
+
+      </article>
+
+    </div>
+
+    <!-- Features -->
+    <div id="projects"></div>
+    <div class="wrapper style1">
+
+      <section id="features" class="container special">
+        <header>
+          <h2>Some of my other Projects</h2>
+        </header>
+        <div class="row">
+          <article class="col-4 col-12-mobile special">
+            <a href="https://github.com/JoeU11/Library-App" class="image featured"><img
+                src="images/library_screenshot.png" alt="" /></a>
+            <header>
+              <h3><a href="https://github.com/JoeU11/Library-App">Book Rental Manager</a></h3>
+            </header>
+            <p>
+              Still a work in progress, but I'm building a book rental application that could be used by a library-type
+              org to keep track of books, rentals, due dates, etc. Right now it's just a rails backend, but I'll be
+              adding a frontend soon.
+            </p>
+          </article>
+          <article class="col-4 col-12-mobile special">
+            <a href="https://gist.github.com/JoeU11/6fc241d62165de295424c29cc58e6462" class="image featured"><img
+                src="images/work_journal_screenshot.png" alt="" /></a>
+            <header>
+              <h3><a href="https://gist.github.com/JoeU11/6fc241d62165de295424c29cc58e6462">Work Journal</a></h3>
+            </header>
+            <p>
+              Ok, you got me. This one's not really a project, but I am making an effort to blog about my journey into
+              tech. I try (and sometimes fail) to write an update each week about new things I'm learning, projects, or
+              just things I find interesting - come check it out!
+            </p>
+          </article>
+          <article class="col-4 col-12-mobile special">
+            <a href="https://github.com/JoeU11/Alien_invaders" class="image featured"><img
+                src="images/Alien_invaders_screenshot.png" alt="" /></a>
+            <header>
+              <h3><a href="https://github.com/JoeU11/Alien_invaders">Alien Invaders</a></h3>
+            </header>
+            <p>
+              One of my very first coding projects and my first game. A very simple remake of the popular arcade game
+              space invaders, developed in ruby using the Gosu 2D game development library and some hand drawn
+              animations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Contact -->
+            <section class="contact">
+              <header>
+                <h3>Looking for a talented developer?</h3>
+              </header>
+              <p>Please get in touch!</p>
+              <ul class="icons">
+                <li><a href="https://twitter.com/joeulica" class="icon brands fa-twitter"><span
+                      class="label">Twitter</span></a></li>
+                <li><a href="https://github.com/JoeU11" class="icon brands fa-github"><span
+                      class="label">github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/joe-ulica/" class="icon brands fa-linkedin"><span
+                      class="label">Linkedin</span></a></li>
+                <li><a href="mailto:joe.ulica@gmail.com" class="icon regular fa-envelope"><span
+                      class="label">Email</span></a>
+                </li>
+              </ul>
+
+            </section>
+
+            <!-- Copyright -->
+            <div class="copyright">
+              <ul class="menu">
+                <li>&copy; Untitled. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    function randomQuestion() {
+      var questions = ["Why do developers love dark mode?", "What is the most used language in programming?", "What's the object-oriented way to become wealthy?", "When is a function a bad investment?", "Why did the two functions fight?", "Why did the database admins leave the NoSQL bar?"]
+      var answers = ["Because light attracts bugs!", "Profanity", "Inheritance", "When there's no return!", "They each had an argument!", "They couldn't find a table!"]
+      var num = Math.floor(Math.random() * questions.length)
+      document.getElementById('question').innerHTML = questions[num];
+      document.getElementById('eyeroll').innerHTML = answers[num];
+    }
+    function showJoke() {
+      document.getElementById('eyeroll').id = 'answer'
+    }
+  </script>
+
+</body>
+
+<style>
+  .listBox {
+    margin: auto;
+    text-align: left;
+    width: 50%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #eyeroll {
+    color: white;
+  }
+
+  #question {
+    opacity: 0;
+    animation-delay: 4s;
+    animation: fadeIn 6s forwards;
+    animation-delay: 4s;
+    -webkit-animation: fadeIn 6s forwards;
+    -webkit-animation-delay: 4s;
+    -moz-animation: fadeIn 6s forwards;
+    -moz-animation-delay: 4s;
+    -o-animation: fadeIn 6s forwards;
+    -o-animation-delay: 4s;
+    -ms-animation: fadeIn 6s forwards;
+    -ms-animation-delay: 4s;
+
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+
+</html>
