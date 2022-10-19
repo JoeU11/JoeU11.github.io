@@ -27,7 +27,7 @@
         </header>
         <br /><br />
         <footer>
-          <a id="question" href="#banner"></a>
+          <a id="question" href="#banner" onClick="showJoke()"></a>
         </footer>
       </div>
 
@@ -210,13 +210,18 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <script type="text/javascript">function randomQuestion() {
+  <script type="text/javascript">
+    function randomQuestion() {
       var questions = ["Why do developers love dark mode?", "What is the most used language in programming?"]
       var answers = ["Because light attracts bugs!", "Profanity"]
       var num = Math.floor(Math.random() * 2)
       document.getElementById('question').innerHTML = questions[num];
       document.getElementById('eyeroll').innerHTML = answers[num];
-    }</script>
+    }
+    function showJoke() {
+      document.getElementById('eyeroll').id = 'answer'
+    }
+  </script>
 
 </body>
 
@@ -229,6 +234,10 @@
 
   html {
     scroll-behavior: smooth;
+  }
+
+  #eyeroll {
+    color: white;
   }
 </style>
 
