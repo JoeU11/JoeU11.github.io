@@ -45,9 +45,10 @@
     </div>
     <section id="banner">
       <header>
-        <hr />
-        <p id="eyeroll"></p>
-        <hr />
+        <div id="joke-container">
+          <p id="eyeroll"></p>
+          <hr />
+        </div>
         <h2 id="aboutMe"><strong>About me</strong></h2>
         <p style="margin: auto; width: 50%; padding: 15px;">
           Hi! I'm Joe and I write code. I got my start in programming through the Actualize bootcamp (an amazing
@@ -246,7 +247,8 @@
       document.getElementById('eyeroll').innerHTML = answers[num];
     }
     function showJoke() {
-      document.getElementById('eyeroll').id = 'answer'
+      // document.getElementById('eyeroll').id = 'answer'
+      document.getElementById('joke-container').style.visibility = 'visible'
     }
   </script>
 
@@ -264,22 +266,30 @@
   }
 
   #eyeroll {
-    color: white;
+    /* margin-top: -20px;
+    margin-bottom: -20px; */
+    font-size: 27px;
+    text-align: center;
+  }
+
+  #joke-container {
+    visibility: hidden;
+    width: 50%;
+    margin: auto;
   }
 
   #question {
     opacity: 0;
-    animation-delay: 4s;
+    animation-delay: 1s;
     animation: fadeIn 6s forwards;
-    animation-delay: 4s;
     -webkit-animation: fadeIn 6s forwards;
-    -webkit-animation-delay: 4s;
+    -webkit-animation-delay: 1s;
     -moz-animation: fadeIn 6s forwards;
-    -moz-animation-delay: 4s;
+    -moz-animation-delay: 1s;
     -o-animation: fadeIn 6s forwards;
-    -o-animation-delay: 4s;
+    -o-animation-delay: 1s;
     -ms-animation: fadeIn 6s forwards;
-    -ms-animation-delay: 4s;
+    -ms-animation-delay: 1s;
 
   }
 
