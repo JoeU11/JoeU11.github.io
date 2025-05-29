@@ -1,3 +1,8 @@
+This is a personal website created to introduce myself and provice a bit of imformation about my programming journey and projects. 
+
+I created this web page based on the Helios template mentioned below, with a handful of my own alterations.
+
+Helios Credits
 Helios by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
