@@ -36,7 +36,8 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#aboutMe">About me</a></li>
-          <li><a href="#capstone">Capstone</a></li>
+          <li><a href="#capstone">Bootcamp Capstone</a></li>
+          <li><a href="#OSU">Oregon State University</a></li>
           <li><a href="#projects">Other Projects</a></li>
           <li><a href="#footer">Contact</a></li>
         </ul>
@@ -45,10 +46,6 @@
     </div>
     <section id="banner">
       <header>
-        <div id="joke-container">
-          <p id="eyeroll"></p>
-          <hr />
-        </div>
         <h2 id="aboutMe"><strong>About me</strong></h2>
         <p style="margin: auto; width: 50%; padding: 15px;">
           Hi! I'm Joe and I'm a current Computer Science Student at Oregon State University. I got my start in programming through the Actualize bootcamp and have been learning ever since. Prior to coding, I worked in the legal/business field as a
@@ -76,7 +73,8 @@
     <div id="capstone"></div>
     <section id="banner">
       <header>
-        <h2><strong>WePlay Pickup Sports</strong> - Capstone Project</h2>
+        <h2><strong>WePlay Pickup Sports</strong></h2>
+        <h4>Coding Bootcamp Capstone Project</h4>
         <p>
           An app allowing users to see, schedule and sign up for pickup sports events.
         </p>
@@ -112,9 +110,7 @@
             allowfullscreen></iframe></div>
 
         <header>
-          <h2>Highlights:</h2>
-
-
+          <h3 style="padding-top: 15px">Highlights:</h3>
           <div class="listBox">
             <ul>
               <li><a href="https://github.com/JoeU11/WePlay-Pickup-Sports-API">Ruby on Rails backend</a> || <a
@@ -125,18 +121,45 @@
               <li>All times display locally</li>
             </ul>
           </div>
-
-          <!-- <p>
-            Sociis aenean eu aenean mollis mollis facilisis primis ornare penatibus aenean. Cursus ac enim
-            pulvinar curabitur morbi convallis. Lectus malesuada sed fermentum dolore amet.
-          </p> -->
         </header>
 
       </article>
 
     </div>
 
-    <!-- Features -->
+    <!-- Oregon State University -->
+    <div id="OSU"></div>
+    <div class="wrapper style1">
+
+      <section id="features" class="container special">
+        <header>
+          <h2>Oregon State University</h2>
+          <p style="margin: auto; width: 50%; padding: 15px;font-size: 20px;">
+          I'm currently working towards a B.S. degree in Computer Science at Oregon State University. Here are some of my projects (more to come).
+          <br/><br/> Expected graduation: Summer 2026 
+        </p>
+        <br/>
+        </header>
+        <div class="row">
+          <article class="col-6 col-12-mobile special">
+            <a href="https://github.com/JoeU11/CS340-Group-Project---Streamline-Striders" class="image featured" ><img src="images/StreamlineStriders_pic.png" alt="" /></a>
+          </article>
+          <article class="col-6 col-12-mobile special">
+            <header>
+              <h3 style="text-align: left;"><a href="https://github.com/JoeU11/CS340-Group-Project---Streamline-Striders">Marathon Org Database</a></h3>
+            </header>
+            <p>
+              A MariaDB SQL database and administrative frontend website for a Marathon Race Organizer. The database has tables for Marathons, Runners, MarathonRunners, Donors/Sponsors, and Dontations. Includes original DDL and DML scripts and interacts with the frontend through PL/SQL scripts to prevent SQL injection.
+              <br/><br/>The administrative frontend allows for basic CRUD actions to be made to all tables by a database admin through a simple UI.
+              <br/><br/>Built in coordination with Liam Maguire for CS340 Intro to Databases.
+            </p>
+          </article>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Other Projects -->
     <div id="projects"></div>
     <div class="wrapper style1">
 
@@ -158,13 +181,13 @@
             </p>
           </article>
           <article class="col-4 col-12-mobile special">
-            <a href="https://gist.github.com/JoeU11/6fc241d62165de295424c29cc58e6462" class="image featured"><img
-                src="images/work_journal_screenshot.png" alt="" /></a>
+            <a href="https://gist.github.com/JoeU11/33ef9061ed597710cf803a575cd1b610" class="image featured"><img
+                src="images/CS_blog_pic.png" alt="" /></a>
             <header>
-              <h3><a href="https://gist.github.com/JoeU11/6fc241d62165de295424c29cc58e6462">Work Journal</a></h3>
+              <h3><a href="https://gist.github.com/JoeU11/6fc241d62165de295424c29cc58e6462">Computer Science Blog</a></h3>
             </header>
             <p>
-              Ok, you got me. This one's not really a project, but I am making an effort to blog about my journey into
+              Ok, you got me. This one's not really a coding project, but I am making an effort to blog about my experiences in
               tech. I try (and sometimes fail) to write an update each week about new things I'm learning, projects, or
               just things I find interesting - come check it out!
             </p>
@@ -199,8 +222,6 @@
               </header>
               <p>Please get in touch!</p>
               <ul class="icons">
-                <li><a href="https://twitter.com/joeulica" class="icon brands fa-twitter"><span
-                      class="label">Twitter</span></a></li>
                 <li><a href="https://github.com/JoeU11" class="icon brands fa-github"><span
                       class="label">github</span></a></li>
                 <li><a href="https://www.linkedin.com/in/joe-ulica/" class="icon brands fa-linkedin"><span
@@ -237,19 +258,7 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <script type="text/javascript">
-    function randomQuestion() {
-      var questions = ["Why do developers love dark mode?", "What is the most used language in programming?", "What's the object-oriented way to become wealthy?", "When is a function a bad investment?", "Why did the two functions fight?", "Why did the database admins leave the NoSQL bar?"]
-      var answers = ["Because light attracts bugs!", "Profanity!", "Inheritance!", "When there's no return!", "They both had an arguments!", "They couldn't find a table!"]
-      var num = Math.floor(Math.random() * questions.length)
-      document.getElementById('question').innerHTML = questions[num];
-      document.getElementById('eyeroll').innerHTML = answers[num];
-    }
-    function showJoke() {
-      // document.getElementById('eyeroll').id = 'answer'
-      document.getElementById('joke-container').style.visibility = 'visible'
-    }
-  </script>
+  <script type="text/javascript"></script>
 
 </body>
 
@@ -262,35 +271,7 @@
 
   html {
     scroll-behavior: smooth;
-  }
-
-  #eyeroll {
-    /* margin-top: -20px;
-    margin-bottom: -20px; */
-    font-size: 27px;
-    text-align: center;
-  }
-
-  #joke-container {
-    visibility: hidden;
-    width: 50%;
-    margin: auto;
-  }
-
-  #question {
-    opacity: 0;
-    animation-delay: 1s;
-    animation: fadeIn 6s forwards;
-    -webkit-animation: fadeIn 6s forwards;
-    -webkit-animation-delay: 1s;
-    -moz-animation: fadeIn 6s forwards;
-    -moz-animation-delay: 1s;
-    -o-animation: fadeIn 6s forwards;
-    -o-animation-delay: 1s;
-    -ms-animation: fadeIn 6s forwards;
-    -ms-animation-delay: 1s;
-
-  }
+  }   
 
   @keyframes fadeIn {
     0% {
